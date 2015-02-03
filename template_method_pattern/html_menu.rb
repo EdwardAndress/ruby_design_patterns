@@ -1,6 +1,8 @@
-require './template.rb'
+require './template_method_pattern/template.rb'
 
-class HTMLMenu < Menu
+class HTMLMenu < Menu #inherits from the basic menu class, which contains the menu template
+
+	#contains output for HTML formatting of the menu
 
 	def output_start
 		puts '<html>'
@@ -8,7 +10,7 @@ class HTMLMenu < Menu
 
 	def output_head
 		puts '<head>'
-		puts "<title> Menu for #{Date.now} </title>"
+		puts "<title> Menu for #{Time.now} </title>"
 		puts '</head>'
 	end
 
