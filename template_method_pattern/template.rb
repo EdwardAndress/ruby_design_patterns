@@ -21,7 +21,7 @@ class Menu
 		@food.each do |course|
 			puts course[0]
 			course[1].each do |dish|
-				puts "#{dish[0]} : #{dish[1]}"
+				output_line("#{dish[0]} : #{dish[1]}")
 			end
 		end
 	end
@@ -39,6 +39,10 @@ class Menu
 
 	def output_body_start
 		raise 'Called abstract method: output_body_start'
+	end
+
+	def output_line
+		raise 'Called abstract method: output_line'
 	end
 
 	def output_body_end
