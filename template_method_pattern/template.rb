@@ -29,16 +29,16 @@ class Menu
 	#output-format-dependent methods are properly defined in output-format-specific subclasses
 	#these methods should never be called directly from the basic Menu class, therefore errors are in place here
 	def output_start
-		raise 'Called abstract method: output_start'
+		#empty so that reports that do not need this, will not have to overwrite
 	end
 
 	def output_head
-		raise 'Called abstract method: output_head'
+		#empty so that reports that do not need this, will not have to overwrite
 	end
 
 
 	def output_body_start
-		raise 'Called abstract method: output_body_start'
+		#empty so that reports that do not need this, will not have to overwrite
 	end
 
 	def output_line
@@ -46,11 +46,11 @@ class Menu
 	end
 
 	def output_body_end
-		raise 'Called abstract method: output_body_end'
+		#empty so that reports that do not need this, will not have to overwrite
 	end
 
 	def output_end
-		raise 'Called abstract method: output_end'
+		#empty so that reports that do not need this, will not have to overwrite
 	end
 
 end
