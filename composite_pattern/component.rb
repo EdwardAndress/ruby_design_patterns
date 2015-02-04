@@ -5,7 +5,7 @@ class Task
 
 	attr_reader :name
 
-	def intialize(name)
+	def initialize(name)
 		@name = name
 	end
 

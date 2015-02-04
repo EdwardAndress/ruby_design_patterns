@@ -1,6 +1,6 @@
 class MixTask < Task 
 
-	def intialize
+	def initialize
 		# calls initialize method in super class passing a name
 		super("Mix Task")
 	end
