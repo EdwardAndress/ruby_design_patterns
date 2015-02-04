@@ -1,5 +1,8 @@
 class Task
 
+	# defines a base class which contains the common interface
+	# (get_time_required) for all elements 
+
 	attr_reader :name
 
 	def intialize(name)
